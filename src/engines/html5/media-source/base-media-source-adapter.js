@@ -85,6 +85,7 @@ export default class BaseMediaSourceAdapter extends FakeEventTarget implements I
       this._trigger(CustomEventType.VIDEO_TRACK_CHANGED, {selectedVideoTrack: track});
     } else if (track instanceof AudioTrack) {
       this._trigger(CustomEventType.AUDIO_TRACK_CHANGED, {selectedAudioTrack: track});
+      console.info("----------selectedTrack: ", track);
     } else if (track instanceof TextTrack) {
       this._trigger(CustomEventType.TEXT_TRACK_CHANGED, {selectedTextTrack: track});
     }
