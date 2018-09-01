@@ -6,19 +6,9 @@ import * as blobSource from '../../../assets/blob-source.json';
 
 const WAIT_TIME: number = 500;
 
-/**
- * @type {Blob}
- */
-const VIDEO = new Blob([new Uint8Array(blobSource.uInt8Array)], {type: 'video/mp4'});
-
-const testVideoElement: HTMLVideoElement = Utils.Dom.createElement('video');
-testVideoElement.src = URL.createObjectURL(VIDEO);
-// For iOS devices needs to turn the playsinline attribute on
-testVideoElement.setAttribute('playsinline', '');
-
 export default class Html5AutoPlayCapability implements ICapability {
+  static _vid: HTMLVideoElement;
   static _logger: any = getLogger('Html5AutoPlayCapability');
-
   static _playPromiseResult: Promise<*>;
 
   /**
@@ -28,15 +18,28 @@ export default class Html5AutoPlayCapability implements ICapability {
    * @returns {void}
    */
   static runCapability(): void {
+    Html5AutoPlayCapability._logger.debug(`run capability test`);
+    if (!Html5AutoPlayCapability._vid) {
+      Html5AutoPlayCapability._vid = Html5AutoPlayCapability._createTestVideoElement();
+    }
     Html5AutoPlayCapability._playPromiseResult = new Promise(resolve => {
       Html5AutoPlayCapability._setMuted(false);
       Html5AutoPlayCapability._getPlayPromise()
-        .then(() => resolve({autoplay: true, mutedAutoPlay: true}))
+        .then(() => {
+          Html5AutoPlayCapability._logger.debug(`{autoplay: true, mutedAutoPlay: true}`);
+          resolve({autoplay: true, mutedAutoPlay: true});
+        })
         .catch(() => {
           Html5AutoPlayCapability._setMuted(true);
           Html5AutoPlayCapability._getPlayPromise()
-            .then(() => resolve({autoplay: false, mutedAutoPlay: true}))
-            .catch(() => resolve({autoplay: false, mutedAutoPlay: false}));
+            .then(() => {
+              Html5AutoPlayCapability._logger.debug(`{autoplay: false, mutedAutoPlay: true}`);
+              resolve({autoplay: false, mutedAutoPlay: true});
+            })
+            .catch(() => {
+              Html5AutoPlayCapability._logger.debug(`{autoplay: false, mutedAutoPlay: false}`);
+              resolve({autoplay: false, mutedAutoPlay: false});
+            });
         });
     });
   }
@@ -59,12 +62,26 @@ export default class Html5AutoPlayCapability implements ICapability {
   }
 
   /**
+   * create a test video element
+   * @returns {HTMLVideoElement} - the test video element
+   * @private
+   */
+  static _createTestVideoElement(): HTMLVideoElement {
+    const VIDEO = new Blob([new Uint8Array(blobSource.uInt8Array)], {type: 'video/mp4'});
+    const testVideoElement: HTMLVideoElement = Utils.Dom.createElement('video');
+    testVideoElement.src = URL.createObjectURL(VIDEO);
+    // For iOS devices needs to turn the playsinline attribute on
+    testVideoElement.setAttribute('playsinline', '');
+    return testVideoElement;
+  }
+
+  /**
    * Gets the play promise.
    * @return {Promise<*>} - Play promise which resolved or rejected.
    * @private
    */
   static _getPlayPromise(): Promise<*> {
-    return testVideoElement.play() || Html5AutoPlayCapability._forcePromiseReturnValue();
+    return Html5AutoPlayCapability._vid.play() || Html5AutoPlayCapability._forcePromiseReturnValue();
   }
 
   /**
@@ -76,11 +93,11 @@ export default class Html5AutoPlayCapability implements ICapability {
    */
   static _setMuted(muted: boolean): void {
     if (muted) {
-      testVideoElement.muted = true;
-      testVideoElement.setAttribute('muted', '');
+      Html5AutoPlayCapability._vid.muted = true;
+      Html5AutoPlayCapability._vid.setAttribute('muted', '');
     } else {
-      testVideoElement.muted = false;
-      testVideoElement.removeAttribute('muted');
+      Html5AutoPlayCapability._vid.muted = false;
+      Html5AutoPlayCapability._vid.removeAttribute('muted');
     }
   }
 
@@ -93,14 +110,14 @@ export default class Html5AutoPlayCapability implements ICapability {
    */
   static _forcePromiseReturnValue(): Promise<*> {
     return new Promise((resolve, reject) => {
-      testVideoElement.addEventListener(Html5EventType.ERROR, () => {
+      Html5AutoPlayCapability._vid.addEventListener(Html5EventType.ERROR, () => {
         reject();
       });
       const supported = setTimeout(() => {
         Html5AutoPlayCapability._logger.debug(`Timeout ${WAIT_TIME} ms has been reached`);
         reject();
       }, WAIT_TIME);
-      if (testVideoElement.paused === true) {
+      if (Html5AutoPlayCapability._vid.paused === true) {
         clearTimeout(supported);
         reject();
       } else {
