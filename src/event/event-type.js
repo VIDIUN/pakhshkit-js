@@ -107,6 +107,10 @@ const Html5EventType: PKEventTypes = {
 
 const CustomEventType: PKEventTypes = {
   /**
+   * Fires when replay is performed.
+   */
+  REPLAY: 'replay',
+  /**
    * Fires when the media is loaded.
    */
   MEDIA_LOADED: 'medialoaded',

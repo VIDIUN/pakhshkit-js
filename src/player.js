@@ -1569,6 +1569,12 @@ export default class Player extends FakeEventTarget {
       this._eventManager.listen(this, Html5EventType.PLAY, this._onPlay.bind(this));
       this._eventManager.listen(this, Html5EventType.PLAYING, this._onPlaying.bind(this));
       this._eventManager.listen(this, Html5EventType.ENDED, this._onEnded.bind(this));
+      this._eventManager.listen(this, Html5EventType.TIME_UPDATE, () => {
+        if (this._playbackEnded) {
+          this._playbackEnded = false;
+          this.dispatchEvent(new FakeEvent(CustomEventType.REPLAY));
+        }
+      });
       this._eventManager.listen(this, CustomEventType.PLAYBACK_ENDED, this._onPlaybackEnded.bind(this));
       this._eventManager.listen(this, CustomEventType.MUTE_CHANGE, () => {
         this._playbackAttributesState.muted = this.muted;
@@ -1900,6 +1906,7 @@ export default class Player extends FakeEventTarget {
    * @private
    */
   _onPlaybackEnded(): void {
+    this._playbackEnded = true;
     if (this.config.playback.loop) {
       this.currentTime = 0;
       this.play();
@@ -1916,6 +1923,7 @@ export default class Player extends FakeEventTarget {
     this._firstPlay = true;
     this._loadingMedia = false;
     this._playbackStart = false;
+    this._playbackEnded = false;
     this._firstPlaying = false;
   }
 
