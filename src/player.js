@@ -73,7 +73,7 @@ const ENGINE_CLASS_NAME: string = 'pakhshkit-engine';
  * @type {string}
  * @const
  */
-const SUBTITLES_STYLE_CLASS_NAME: string = 'playkit-subtitles-style';
+const SUBTITLES_STYLE_CLASS_NAME: string = 'pakhshkit-subtitles-style';
 
 /**
  * The subtitles class name.
