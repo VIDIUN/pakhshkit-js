@@ -45,13 +45,13 @@ import {FullscreenController} from './fullscreen/fullscreen-controller';
  * @type {string}
  * @const
  */
-const BLACK_COVER_CLASS_NAME: string = 'playkit-black-cover';
+const BLACK_COVER_CLASS_NAME: string = 'pakhshkit-black-cover';
 /**
  * The player container class name.
  * @type {string}
  * @const
  */
-const CONTAINER_CLASS_NAME: string = 'playkit-container';
+const CONTAINER_CLASS_NAME: string = 'pakhshkit-container';
 
 /**
  /**
@@ -59,14 +59,14 @@ const CONTAINER_CLASS_NAME: string = 'playkit-container';
  * @type {string}
  * @const
  */
-const POSTER_CLASS_NAME: string = 'playkit-poster';
+const POSTER_CLASS_NAME: string = 'pakhshkit-poster';
 
 /**
  * The engine class name.
  * @type {string}
  * @const
  */
-const ENGINE_CLASS_NAME: string = 'playkit-engine';
+const ENGINE_CLASS_NAME: string = 'pakhshkit-engine';
 
 /**
  * The text style class name.
@@ -80,7 +80,7 @@ const SUBTITLES_STYLE_CLASS_NAME: string = 'playkit-subtitles-style';
  * @type {string}
  * @const
  */
-const SUBTITLES_CLASS_NAME: string = 'playkit-subtitles';
+const SUBTITLES_CLASS_NAME: string = 'pakhshkit-subtitles';
 
 /**
  *  The auto string, for captions
@@ -1423,15 +1423,15 @@ export default class Player extends FakeEventTarget {
    * @returns {void}
    */
   _appendDomElements(): void {
-    // Append playkit-subtitles
+    // Append pakhshkit-subtitles
     this._textDisplayEl = Utils.Dom.createElement('div');
     Utils.Dom.addClassName(this._textDisplayEl, SUBTITLES_CLASS_NAME);
     Utils.Dom.appendChild(this._el, this._textDisplayEl);
-    // Append playkit-black-cover
+    // Append pakhshkit-black-cover
     this._blackCoverEl = Utils.Dom.createElement('div');
     Utils.Dom.addClassName(this._blackCoverEl, BLACK_COVER_CLASS_NAME);
     Utils.Dom.appendChild(this._el, this._blackCoverEl);
-    // Append playkit-poster
+    // Append pakhshkit-poster
     const el = this._posterManager.getElement();
     Utils.Dom.addClassName(el, POSTER_CLASS_NAME);
     Utils.Dom.appendChild(this._el, el);

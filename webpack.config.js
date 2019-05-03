@@ -19,12 +19,12 @@ if (PROD) {
 module.exports = {
   context: __dirname + '/src',
   entry: {
-    playkit: 'playkit.js'
+    pakhshkit: 'pakhshkit.js'
   },
   output: {
     path: __dirname + '/dist',
     filename: '[name].js',
-    library: ['playkit', 'core'],
+    library: ['pakhshkit', 'core'],
     libraryTarget: 'umd',
     umdNamedDefine: true,
     devtoolModuleFilenameTemplate: './core/[resource-path]'

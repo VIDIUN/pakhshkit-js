@@ -22,7 +22,7 @@ var config = {
   sources: {...}
 };
 // No additional code required - playback will begin automatically
-var player = playkit.core.loadPlayer(config);
+var player = pakhshkit.core.loadPlayer(config);
 ```
 
 > **_Note_**:
@@ -32,7 +32,7 @@ var player = playkit.core.loadPlayer(config);
 > var config = {
 >  sources: {...}
 > };
-> var player = playkit.core.loadPlayer(config);
+> var player = pakhshkit.core.loadPlayer(config);
 > // Bad practice!
 > player.play();
 > ```
@@ -48,7 +48,7 @@ On some platforms, web browsers do not allow to playback to begin automatically.
 #### The Good News
 
 These restrictions apply only to automatic playback with sound, but not to automatic playback without sound.
-The PlayKitJS core can manage this logic on its own, and identify whether the current environment does not support autoplay with sound. In this case, the player will apply the autoplay with sound.
+The PakhshKitJS core can manage this logic on its own, and identify whether the current environment does not support autoplay with sound. In this case, the player will apply the autoplay with sound.
 
 To use this feature, you'll need to set the `playback.allowMutedAutoPlay` accordingly to the desired behavior.
 
@@ -80,7 +80,7 @@ var config = {
   sources: {...}
 };
 // If browser blocks autoplay, playback will start muted
-var player = playkit.core.loadPlayer(config);
+var player = pakhshkit.core.loadPlayer(config);
 ```
 
 #### Example - Basic usage 2:
@@ -94,5 +94,5 @@ var config = {
   sources: {...}
 };
 // If browser blocks autoplay, playback will not start automatically
-var player = playkit.core.loadPlayer(config);
+var player = pakhshkit.core.loadPlayer(config);
 ```
