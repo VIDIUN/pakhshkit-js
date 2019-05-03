@@ -86,19 +86,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaltura/playkit-js"
+    "url": "https://github.com/vidiun/pakhshkit-js"
   },
   "keywords": [
-    "kaltura",
+    "vidiun",
     "player",
     "html5 player"
   ],
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/kaltura/playkit-js/issues"
+    "url": "https://github.com/vidiun/pakhshkit-js/issues"
   },
-  "homepage": "https://github.com/kaltura/playkit-js",
-  "kcc": {
-    "name": "playkit"
+  "homepage": "https://github.com/vidiun/pakhshkit-js",
+  "vcc": {
+    "name": "pakhshkit"
   }
 }
