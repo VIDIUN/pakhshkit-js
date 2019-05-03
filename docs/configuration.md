@@ -6,7 +6,7 @@ Configuration parameters could be provided upon instantiation of the player inst
 var config = {
   // Configuration here
 };
-var player = playkit.core.loadPlayer(config);
+var player = pakhshkit.core.loadPlayer(config);
 ```
 
 #### Configuration Structure
@@ -918,7 +918,7 @@ var config = {
 > ```js
 > {
 >  id: string,
->  ks: string,
+>  vs: string,
 >  partnerId: number,
 >  uiConfId: number
 > }
@@ -940,7 +940,7 @@ var config = {
 > >
 > > ##
 > >
-> > ### config.session.ks
+> > ### config.session.vs
 > >
 > > ##### Type: `string`
 > >
