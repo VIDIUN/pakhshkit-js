@@ -3,214 +3,214 @@
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 <a name="0.46.1"></a>
-## [0.46.1](https://github.com/kaltura/playkit-js/compare/v0.46.0...v0.46.1) (2019-05-01)
+## [0.46.1](https://github.com/vidiun/pakhshkit-js/compare/v0.46.0...v0.46.1) (2019-05-01)
 
 
 ### Bug Fixes
 
-* **FEC-9012:** add mediaType VOD configuration check for isLive verification ([#357](https://github.com/kaltura/playkit-js/issues/357)) ([b76033f](https://github.com/kaltura/playkit-js/commit/b76033f))
+* **FEC-9012:** add mediaType VOD configuration check for isLive verification ([#357](https://github.com/vidiun/pakhshkit-js/issues/357)) ([b76033f](https://github.com/vidiun/pakhshkit-js/commit/b76033f))
 
 
 
 <a name="0.46.0"></a>
-# [0.46.0](https://github.com/kaltura/playkit-js/compare/v0.45.8...v0.46.0) (2019-04-15)
+# [0.46.0](https://github.com/vidiun/pakhshkit-js/compare/v0.45.8...v0.46.0) (2019-04-15)
 
 
 ### Features
 
-* engine decorator ([#324](https://github.com/kaltura/playkit-js/issues/324)) ([aa67b09](https://github.com/kaltura/playkit-js/commit/aa67b09))
+* engine decorator ([#324](https://github.com/vidiun/pakhshkit-js/issues/324)) ([aa67b09](https://github.com/vidiun/pakhshkit-js/commit/aa67b09))
 
 
 
 <a name="0.45.8"></a>
-## [0.45.8](https://github.com/kaltura/playkit-js/compare/v0.45.7...v0.45.8) (2019-04-14)
+## [0.45.8](https://github.com/vidiun/pakhshkit-js/compare/v0.45.7...v0.45.8) (2019-04-14)
 
 
 ### Bug Fixes
 
-* **FEC-9037:** When entering/exiting fullscreen, the events are sent twice in several devices ([#356](https://github.com/kaltura/playkit-js/issues/356)) ([00f9636](https://github.com/kaltura/playkit-js/commit/00f9636))
+* **FEC-9037:** When entering/exiting fullscreen, the events are sent twice in several devices ([#356](https://github.com/vidiun/pakhshkit-js/issues/356)) ([00f9636](https://github.com/vidiun/pakhshkit-js/commit/00f9636))
 
 
 
 <a name="0.45.7"></a>
-## [0.45.7](https://github.com/kaltura/playkit-js/compare/v0.45.6...v0.45.7) (2019-04-07)
+## [0.45.7](https://github.com/vidiun/pakhshkit-js/compare/v0.45.6...v0.45.7) (2019-04-07)
 
 
 ### Bug Fixes
 
-* **FEC-8826:** pass html element from api and there isn't check for ios in isfullscreen method ([#354](https://github.com/kaltura/playkit-js/issues/354)) ([0844cd2](https://github.com/kaltura/playkit-js/commit/0844cd2))
-* **FEC-9021:** [iOS] - different behaviour after closing fullscreen and enter fullscreen again ([#355](https://github.com/kaltura/playkit-js/issues/355)) ([4a01b41](https://github.com/kaltura/playkit-js/commit/4a01b41))
+* **FEC-8826:** pass html element from api and there isn't check for ios in isfullscreen method ([#354](https://github.com/vidiun/pakhshkit-js/issues/354)) ([0844cd2](https://github.com/vidiun/pakhshkit-js/commit/0844cd2))
+* **FEC-9021:** [iOS] - different behaviour after closing fullscreen and enter fullscreen again ([#355](https://github.com/vidiun/pakhshkit-js/issues/355)) ([4a01b41](https://github.com/vidiun/pakhshkit-js/commit/4a01b41))
 
 
 
 <a name="0.45.6"></a>
-## [0.45.6](https://github.com/kaltura/playkit-js/compare/v0.45.5...v0.45.6) (2019-04-01)
+## [0.45.6](https://github.com/vidiun/pakhshkit-js/compare/v0.45.5...v0.45.6) (2019-04-01)
 
 
 ### Bug Fixes
 
-* **FEC-8826:** fullscreen implementation moved to core ([#353](https://github.com/kaltura/playkit-js/issues/353)) ([2bab7bd](https://github.com/kaltura/playkit-js/commit/2bab7bd))
+* **FEC-8826:** fullscreen implementation moved to core ([#353](https://github.com/vidiun/pakhshkit-js/issues/353)) ([2bab7bd](https://github.com/vidiun/pakhshkit-js/commit/2bab7bd))
 
 
 
 <a name="0.45.5"></a>
-## [0.45.5](https://github.com/kaltura/playkit-js/compare/v0.45.4...v0.45.5) (2019-03-06)
+## [0.45.5](https://github.com/vidiun/pakhshkit-js/compare/v0.45.4...v0.45.5) (2019-03-06)
 
 
 ### Bug Fixes
 
-* **FEC-8957:** cannot pause/resume the ad after change media on iOS ([#352](https://github.com/kaltura/playkit-js/issues/352)) ([c0efdfa](https://github.com/kaltura/playkit-js/commit/c0efdfa))
+* **FEC-8957:** cannot pause/resume the ad after change media on iOS ([#352](https://github.com/vidiun/pakhshkit-js/issues/352)) ([c0efdfa](https://github.com/vidiun/pakhshkit-js/commit/c0efdfa))
 
 
 
 <a name="0.45.4"></a>
-## [0.45.4](https://github.com/kaltura/playkit-js/compare/v0.45.3...v0.45.4) (2019-02-27)
+## [0.45.4](https://github.com/vidiun/pakhshkit-js/compare/v0.45.3...v0.45.4) (2019-02-27)
 
 
 ### Bug Fixes
 
-* **FEC-8381:** when external caption http request fails, the error message is not clear ([#347](https://github.com/kaltura/playkit-js/issues/347)) ([6c97e16](https://github.com/kaltura/playkit-js/commit/6c97e16))
-* **FEC-8565:** AUTOPLAY_FAILED event is dispatched after play-pause on slow network  ([#349](https://github.com/kaltura/playkit-js/issues/349)) ([eeb3d15](https://github.com/kaltura/playkit-js/commit/eeb3d15))
-* **FEC-8911:** autoplay is not working on Samsung Native (built-in) browser ([#348](https://github.com/kaltura/playkit-js/issues/348)) ([2000dab](https://github.com/kaltura/playkit-js/commit/2000dab))
+* **FEC-8381:** when external caption http request fails, the error message is not clear ([#347](https://github.com/vidiun/pakhshkit-js/issues/347)) ([6c97e16](https://github.com/vidiun/pakhshkit-js/commit/6c97e16))
+* **FEC-8565:** AUTOPLAY_FAILED event is dispatched after play-pause on slow network  ([#349](https://github.com/vidiun/pakhshkit-js/issues/349)) ([eeb3d15](https://github.com/vidiun/pakhshkit-js/commit/eeb3d15))
+* **FEC-8911:** autoplay is not working on Samsung Native (built-in) browser ([#348](https://github.com/vidiun/pakhshkit-js/issues/348)) ([2000dab](https://github.com/vidiun/pakhshkit-js/commit/2000dab))
 
 
 
 <a name="0.45.3"></a>
-## [0.45.3](https://github.com/kaltura/playkit-js/compare/v0.45.1...v0.45.3) (2019-02-04)
+## [0.45.3](https://github.com/vidiun/pakhshkit-js/compare/v0.45.1...v0.45.3) (2019-02-04)
 
 
 ### Bug Fixes
 
-* **FEC-8858:** the captions languages in list displayed twice ([#341](https://github.com/kaltura/playkit-js/issues/341)) ([6b0761d](https://github.com/kaltura/playkit-js/commit/6b0761d))
-* **FEC-8865:** the captions style change is not applied on iOS  ([#342](https://github.com/kaltura/playkit-js/issues/342)) ([3671dbd](https://github.com/kaltura/playkit-js/commit/3671dbd))
-* **FEC-8874:** captions look and feel issues ([#343](https://github.com/kaltura/playkit-js/issues/343)) ([d59dc43](https://github.com/kaltura/playkit-js/commit/d59dc43))
+* **FEC-8858:** the captions languages in list displayed twice ([#341](https://github.com/vidiun/pakhshkit-js/issues/341)) ([6b0761d](https://github.com/vidiun/pakhshkit-js/commit/6b0761d))
+* **FEC-8865:** the captions style change is not applied on iOS  ([#342](https://github.com/vidiun/pakhshkit-js/issues/342)) ([3671dbd](https://github.com/vidiun/pakhshkit-js/commit/3671dbd))
+* **FEC-8874:** captions look and feel issues ([#343](https://github.com/vidiun/pakhshkit-js/issues/343)) ([d59dc43](https://github.com/vidiun/pakhshkit-js/commit/d59dc43))
 
 
 
 <a name="0.45.2"></a>
-## [0.45.2](https://github.com/kaltura/playkit-js/compare/v0.45.1...v0.45.2) (2019-01-31)
+## [0.45.2](https://github.com/vidiun/pakhshkit-js/compare/v0.45.1...v0.45.2) (2019-01-31)
 
 
 ### Bug Fixes
 
-* **FEC-8858:** the captions languages in list displayed twice ([#341](https://github.com/kaltura/playkit-js/issues/341)) ([6b0761d](https://github.com/kaltura/playkit-js/commit/6b0761d))
-* **FEC-8865:** the captions style change is not applied on iOS  ([#342](https://github.com/kaltura/playkit-js/issues/342)) ([3671dbd](https://github.com/kaltura/playkit-js/commit/3671dbd))
+* **FEC-8858:** the captions languages in list displayed twice ([#341](https://github.com/vidiun/pakhshkit-js/issues/341)) ([6b0761d](https://github.com/vidiun/pakhshkit-js/commit/6b0761d))
+* **FEC-8865:** the captions style change is not applied on iOS  ([#342](https://github.com/vidiun/pakhshkit-js/issues/342)) ([3671dbd](https://github.com/vidiun/pakhshkit-js/commit/3671dbd))
 
 
 
 <a name="0.45.1"></a>
-## [0.45.1](https://github.com/kaltura/playkit-js/compare/v0.45.0...v0.45.1) (2019-01-24)
+## [0.45.1](https://github.com/vidiun/pakhshkit-js/compare/v0.45.0...v0.45.1) (2019-01-24)
 
 
 
 <a name="0.45.0"></a>
-# [0.45.0](https://github.com/kaltura/playkit-js/compare/v0.44.0...v0.45.0) (2019-01-20)
+# [0.45.0](https://github.com/vidiun/pakhshkit-js/compare/v0.44.0...v0.45.0) (2019-01-20)
 
 
 ### Bug Fixes
 
-* **FEC-8556:** inbound captions frame is stuck in case switching captions using wrong external url ([#335](https://github.com/kaltura/playkit-js/issues/335)) ([7124090](https://github.com/kaltura/playkit-js/commit/7124090))
-* **FEC-8572:** change the way the player compute text tracks font size ([#328](https://github.com/kaltura/playkit-js/issues/328)) ([13bf1ae](https://github.com/kaltura/playkit-js/commit/13bf1ae))
-* **FEC-8763:** add loadMedia life cycle hook for plugins ([#337](https://github.com/kaltura/playkit-js/issues/337)) ([dbc200a](https://github.com/kaltura/playkit-js/commit/dbc200a))
-* **FEC-8770:** iOS -  captions style it applies for both players in the same page ([#329](https://github.com/kaltura/playkit-js/issues/329)) ([d7877c3](https://github.com/kaltura/playkit-js/commit/d7877c3))
-* **FEC-8829, FEC-8807:** native adapter throws an error after 30 seconds pause ([#339](https://github.com/kaltura/playkit-js/issues/339)) ([9596dd9](https://github.com/kaltura/playkit-js/commit/9596dd9))
+* **FEC-8556:** inbound captions frame is stuck in case switching captions using wrong external url ([#335](https://github.com/vidiun/pakhshkit-js/issues/335)) ([7124090](https://github.com/vidiun/pakhshkit-js/commit/7124090))
+* **FEC-8572:** change the way the player compute text tracks font size ([#328](https://github.com/vidiun/pakhshkit-js/issues/328)) ([13bf1ae](https://github.com/vidiun/pakhshkit-js/commit/13bf1ae))
+* **FEC-8763:** add loadMedia life cycle hook for plugins ([#337](https://github.com/vidiun/pakhshkit-js/issues/337)) ([dbc200a](https://github.com/vidiun/pakhshkit-js/commit/dbc200a))
+* **FEC-8770:** iOS -  captions style it applies for both players in the same page ([#329](https://github.com/vidiun/pakhshkit-js/issues/329)) ([d7877c3](https://github.com/vidiun/pakhshkit-js/commit/d7877c3))
+* **FEC-8829, FEC-8807:** native adapter throws an error after 30 seconds pause ([#339](https://github.com/vidiun/pakhshkit-js/issues/339)) ([9596dd9](https://github.com/vidiun/pakhshkit-js/commit/9596dd9))
 
 
 ### Features
 
-* **FEC-8620:** resize watcher ([#325](https://github.com/kaltura/playkit-js/issues/325)) ([86687f8](https://github.com/kaltura/playkit-js/commit/86687f8))
-* **FEC-8749:** expose IMA ad data ([#334](https://github.com/kaltura/playkit-js/issues/334)) ([67d8db1](https://github.com/kaltura/playkit-js/commit/67d8db1))
+* **FEC-8620:** resize watcher ([#325](https://github.com/vidiun/pakhshkit-js/issues/325)) ([86687f8](https://github.com/vidiun/pakhshkit-js/commit/86687f8))
+* **FEC-8749:** expose IMA ad data ([#334](https://github.com/vidiun/pakhshkit-js/issues/334)) ([67d8db1](https://github.com/vidiun/pakhshkit-js/commit/67d8db1))
 
 
 
 <a name="0.44.1"></a>
-## [0.44.1](https://github.com/kaltura/playkit-js/compare/v0.44.0...v0.44.1) (2018-12-24)
+## [0.44.1](https://github.com/vidiun/pakhshkit-js/compare/v0.44.0...v0.44.1) (2018-12-24)
 
 
 ### Bug Fixes
 
-* **FEC-8770:** iOS -  captions style it applies for both players in the same page ([#329](https://github.com/kaltura/playkit-js/issues/329)) ([d7877c3](https://github.com/kaltura/playkit-js/commit/d7877c3))
+* **FEC-8770:** iOS -  captions style it applies for both players in the same page ([#329](https://github.com/vidiun/pakhshkit-js/issues/329)) ([d7877c3](https://github.com/vidiun/pakhshkit-js/commit/d7877c3))
 
 
 
 <a name="0.44.0"></a>
-# [0.44.0](https://github.com/kaltura/playkit-js/compare/v0.43.1...v0.44.0) (2018-12-20)
+# [0.44.0](https://github.com/vidiun/pakhshkit-js/compare/v0.43.1...v0.44.0) (2018-12-20)
 
 
 ### Bug Fixes
 
-* **FEC-8779:** change media does not work if external caption is shown ([#331](https://github.com/kaltura/playkit-js/issues/331)) ([2b48772](https://github.com/kaltura/playkit-js/commit/2b48772))
+* **FEC-8779:** change media does not work if external caption is shown ([#331](https://github.com/vidiun/pakhshkit-js/issues/331)) ([2b48772](https://github.com/vidiun/pakhshkit-js/commit/2b48772))
 
 
 ### Features
 
-* **FEC-8700:** add config option to specify DRM system ([#330](https://github.com/kaltura/playkit-js/issues/330)) ([d7640f4](https://github.com/kaltura/playkit-js/commit/d7640f4))
+* **FEC-8700:** add config option to specify DRM system ([#330](https://github.com/vidiun/pakhshkit-js/issues/330)) ([d7640f4](https://github.com/vidiun/pakhshkit-js/commit/d7640f4))
 
 
 
 <a name="0.43.1"></a>
-## [0.43.1](https://github.com/kaltura/playkit-js/compare/v0.43.0...v0.43.1) (2018-12-16)
+## [0.43.1](https://github.com/vidiun/pakhshkit-js/compare/v0.43.0...v0.43.1) (2018-12-16)
 
 
 ### Bug Fixes
 
-* **FEC-7444:** when selecting fullscreen in android captions size is too large ([#327](https://github.com/kaltura/playkit-js/issues/327)) ([23009e3](https://github.com/kaltura/playkit-js/commit/23009e3))
+* **FEC-7444:** when selecting fullscreen in android captions size is too large ([#327](https://github.com/vidiun/pakhshkit-js/issues/327)) ([23009e3](https://github.com/vidiun/pakhshkit-js/commit/23009e3))
 
 
 
 <a name="0.43.0"></a>
-# [0.43.0](https://github.com/kaltura/playkit-js/compare/v0.42.0...v0.43.0) (2018-12-12)
+# [0.43.0](https://github.com/vidiun/pakhshkit-js/compare/v0.42.0...v0.43.0) (2018-12-12)
 
 
 ### Bug Fixes
 
-* **FEC-8714:** change media doesn't work after player.destroy() on iOS ([#317](https://github.com/kaltura/playkit-js/issues/317)) ([46b4928](https://github.com/kaltura/playkit-js/commit/46b4928))
-* **FEC-8714:** removing static video element from the engine ([#321](https://github.com/kaltura/playkit-js/issues/321)) ([86fd4f5](https://github.com/kaltura/playkit-js/commit/86fd4f5))
-* **FEC-8715:** if label does not exist in manifest use the language property ([#320](https://github.com/kaltura/playkit-js/issues/320)) ([1af6dea](https://github.com/kaltura/playkit-js/commit/1af6dea))
-* **FEC-8722:** more than one caption is checked at the caption menu ([#316](https://github.com/kaltura/playkit-js/issues/316)) ([7a1ef49](https://github.com/kaltura/playkit-js/commit/7a1ef49))
+* **FEC-8714:** change media doesn't work after player.destroy() on iOS ([#317](https://github.com/vidiun/pakhshkit-js/issues/317)) ([46b4928](https://github.com/vidiun/pakhshkit-js/commit/46b4928))
+* **FEC-8714:** removing static video element from the engine ([#321](https://github.com/vidiun/pakhshkit-js/issues/321)) ([86fd4f5](https://github.com/vidiun/pakhshkit-js/commit/86fd4f5))
+* **FEC-8715:** if label does not exist in manifest use the language property ([#320](https://github.com/vidiun/pakhshkit-js/issues/320)) ([1af6dea](https://github.com/vidiun/pakhshkit-js/commit/1af6dea))
+* **FEC-8722:** more than one caption is checked at the caption menu ([#316](https://github.com/vidiun/pakhshkit-js/issues/316)) ([7a1ef49](https://github.com/vidiun/pakhshkit-js/commit/7a1ef49))
 
 
 ### Features
 
-* **FEC-8147:** set default settings for ABR settings ([#323](https://github.com/kaltura/playkit-js/issues/323)) ([b094b39](https://github.com/kaltura/playkit-js/commit/b094b39))
-* **FEC-8639:** fairplay uDRM error handling refining ([#319](https://github.com/kaltura/playkit-js/issues/319)) ([e3d4a49](https://github.com/kaltura/playkit-js/commit/e3d4a49))
-* **FEC-8682:** end screen ([#318](https://github.com/kaltura/playkit-js/issues/318)) ([435e812](https://github.com/kaltura/playkit-js/commit/435e812))
+* **FEC-8147:** set default settings for ABR settings ([#323](https://github.com/vidiun/pakhshkit-js/issues/323)) ([b094b39](https://github.com/vidiun/pakhshkit-js/commit/b094b39))
+* **FEC-8639:** fairplay uDRM error handling refining ([#319](https://github.com/vidiun/pakhshkit-js/issues/319)) ([e3d4a49](https://github.com/vidiun/pakhshkit-js/commit/e3d4a49))
+* **FEC-8682:** end screen ([#318](https://github.com/vidiun/pakhshkit-js/issues/318)) ([435e812](https://github.com/vidiun/pakhshkit-js/commit/435e812))
 
 
 
 <a name="0.42.1"></a>
-## [0.42.1](https://github.com/kaltura/playkit-js/compare/v0.42.0...v0.42.1) (2018-12-04)
+## [0.42.1](https://github.com/vidiun/pakhshkit-js/compare/v0.42.0...v0.42.1) (2018-12-04)
 
 
 ### Bug Fixes
 
-* **FEC-8715:** if label does not exist in manifest use the language property ([#320](https://github.com/kaltura/playkit-js/issues/320)) ([774ac77](https://github.com/kaltura/playkit-js/commit/774ac77))
+* **FEC-8715:** if label does not exist in manifest use the language property ([#320](https://github.com/vidiun/pakhshkit-js/issues/320)) ([774ac77](https://github.com/vidiun/pakhshkit-js/commit/774ac77))
 
 
 
 <a name="0.42.0"></a>
-# [0.42.0](https://github.com/kaltura/playkit-js/compare/v0.41.2...v0.42.0) (2018-11-22)
+# [0.42.0](https://github.com/vidiun/pakhshkit-js/compare/v0.41.2...v0.42.0) (2018-11-22)
 
 
 ### Bug Fixes
 
-* **FEC-8712:** replay button does not display when using a non liner ad  ([#313](https://github.com/kaltura/playkit-js/issues/313)) ([9546140](https://github.com/kaltura/playkit-js/commit/9546140))
+* **FEC-8712:** replay button does not display when using a non liner ad  ([#313](https://github.com/vidiun/pakhshkit-js/issues/313)) ([9546140](https://github.com/vidiun/pakhshkit-js/commit/9546140))
 
 
 ### Features
 
-* **ads-controller:** add more ads APIs ([#312](https://github.com/kaltura/playkit-js/issues/312)) ([1f6fdf6](https://github.com/kaltura/playkit-js/commit/1f6fdf6))
+* **ads-controller:** add more ads APIs ([#312](https://github.com/vidiun/pakhshkit-js/issues/312)) ([1f6fdf6](https://github.com/vidiun/pakhshkit-js/commit/1f6fdf6))
 
 
 
 <a name="0.41.2"></a>
-## [0.41.2](https://github.com/kaltura/playkit-js/compare/v0.41.1...v0.41.2) (2018-11-20)
+## [0.41.2](https://github.com/vidiun/pakhshkit-js/compare/v0.41.1...v0.41.2) (2018-11-20)
 
 
 ### Bug Fixes
 
-* **FEC-8687:** add bookmark events ([2d31da9](https://github.com/kaltura/playkit-js/commit/2d31da9))
-* **FEC-8695:** reset/destroy engine only after all services are destroyed ([#309](https://github.com/kaltura/playkit-js/issues/309)) ([95b5c5c](https://github.com/kaltura/playkit-js/commit/95b5c5c))
+* **FEC-8687:** add bookmark events ([2d31da9](https://github.com/vidiun/pakhshkit-js/commit/2d31da9))
+* **FEC-8695:** reset/destroy engine only after all services are destroyed ([#309](https://github.com/vidiun/pakhshkit-js/issues/309)) ([95b5c5c](https://github.com/vidiun/pakhshkit-js/commit/95b5c5c))
 
 
 

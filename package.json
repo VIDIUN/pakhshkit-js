@@ -1,7 +1,7 @@
 {
-  "name": "@playkit-js/playkit-js",
+  "name": "@pakhshkit-js/pakhshkit-js",
   "version": "0.46.1",
-  "main": "dist/playkit.js",
+  "main": "dist/pakhshkit.js",
   "scripts": {
     "clean": "rm -rf ./dist",
     "prebuild": "npm run clean",

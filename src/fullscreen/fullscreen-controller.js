@@ -9,7 +9,7 @@ import * as Utils from '../utils/util';
  * @type {string}
  * @const
  */
-const IN_BROWSER_FULLSCREEN_FOR_IOS: string = 'playkit-in-browser-fullscreen-mode';
+const IN_BROWSER_FULLSCREEN_FOR_IOS: string = 'pakhshkit-in-browser-fullscreen-mode';
 
 /**
  * @class FullscreenController
