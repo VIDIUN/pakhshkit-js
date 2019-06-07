@@ -90,7 +90,7 @@ const Code: CodeType = {
   UNKNOWN_FILE_TYPE: 2011,
   /**
    * The language key in the caption object is empty / does not exist. Language is a mandatory field.
-   * https://github.com/kaltura/playkit-js/blob/master/docs/configuration.md#configsourcescaptions
+   * https://github.com/vidiun/pakhshkit-js/blob/master/docs/configuration.md#configsourcescaptions
    */
   UNKNOWN_LANGUAGE: 2012,
   /**
