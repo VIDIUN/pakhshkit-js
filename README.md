@@ -1,18 +1,18 @@
-# PlayKit JS - State of the Art HTML5 Player
+# PakhshKit JS - State of the Art HTML5 Player
 
-[![Build Status](https://travis-ci.org/kaltura/playkit-js.svg?branch=master)](https://travis-ci.org/kaltura/playkit-js)
+[![Build Status](https://travis-ci.org/vidiun/pakhshkit-js.svg?branch=master)](https://travis-ci.org/vidiun/pakhshkit-js)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-PlayKit JS is an opinionated JavaScript library to enable seamless video playback across browsers and platforms with support for advanced streaming formats.
+PakhshKit JS is an opinionated JavaScript library to enable seamless video playback across browsers and platforms with support for advanced streaming formats.
 
 It leverages on HTML5 video, MediaSource Extensions and Encrypted Media Extensions for playback of clear and DRM protected video.
 
-PlayKit JS goal is to make it as easy as possible to stream adaptive bitrate video and audio using modern browser technologies (although we do support progressive :-))
+PakhshKit JS goal is to make it as easy as possible to stream adaptive bitrate video and audio using modern browser technologies (although we do support progressive :-))
 
-PlayKit JS is the core library to facilitate the handling of different playback formats and features with one interface.
+PakhshKit JS is the core library to facilitate the handling of different playback formats and features with one interface.
 The library exposes a mechanism to extend its capabilities via plugins and adapters.
 
-PlayKit JS is written in [ECMAScript6], statically analysed using [Flow] and transpiled in ECMAScript5 using [Babel].
+PakhshKit JS is written in [ECMAScript6], statically analysed using [Flow] and transpiled in ECMAScript5 using [Babel].
 
 [flow]: https://flow.org/
 [ecmascript6]: https://github.com/ericdouglas/ES6-Learning#articles--tutorials
@@ -40,8 +40,8 @@ First, clone and run [yarn] to install dependencies:
 [yarn]: https://yarnpkg.com/lang/en/
 
 ```
-git clone https://github.com/kaltura/playkit-js.git
-cd playkit-js
+git clone https://github.com/vidiun/pakhshkit-js.git
+cd pakhshkit-js
 yarn install
 ```
 
@@ -58,12 +58,12 @@ yarn run build
 Finally, add the bundle as a script tag in your page, and initialize the player
 
 ```html
-<script type="text/javascript" src="/PATH/TO/FILE/playkit.js"></script>
+<script type="text/javascript" src="/PATH/TO/FILE/pakhshkit.js"></script>
 <div id="player-placeholder" style="height:360px;width:640px">
 <script type="text/javascript">
 var playerContainer = document.querySelector("#player-placeholder");
 var config = {...};
-var player = playkit.core.loadPlayer(config);
+var player = pakhshkit.core.loadPlayer(config);
 playerContainer.appendChild(player.getView());
 player.play();
 </script>
@@ -110,7 +110,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kaltura/playkit-js/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/vidiun/pakhshkit-js/tags).
 
 ## License
 

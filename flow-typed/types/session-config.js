@@ -1,7 +1,7 @@
 // @flow
 declare type PKSessionConfigObject = {
   id?: string,
-  ks?: string,
+  vs?: string,
   isAnonymous?: boolean,
   partnerId?: number,
   uiConfId?: number
