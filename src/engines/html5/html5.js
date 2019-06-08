@@ -346,7 +346,7 @@ export default class Html5 extends FakeEventTarget implements IEngine {
 
   /**
    * Select a new text track.
-   * @param {PKTextTrack} textTrack - The playkit text track object to set.
+   * @param {PKTextTrack} textTrack - The pakhshkit text track object to set.
    * @returns {void}
    */
   selectTextTrack(textTrack: PKTextTrack): void {
@@ -856,7 +856,7 @@ export default class Html5 extends FakeEventTarget implements IEngine {
 
   /**
    * Add cuechange listener to active textTrack.
-   * @param {PKTextTrack} textTrack - The playkit text track object to set.
+   * @param {PKTextTrack} textTrack - The pakhshkit text track object to set.
    * @returns {void}
    * @private
    */
