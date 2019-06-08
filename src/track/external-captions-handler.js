@@ -420,7 +420,7 @@ class ExternalCaptionsHandler extends FakeEventTarget {
   /**
    * adds a new text track element to the video element or set an existing one
    * (when adding a text track with existing language to the video element it will remove all its cues)
-   * @param {TextTrack} textTrack - the playkit text track object to be added
+   * @param {TextTrack} textTrack - the pakhshkit text track object to be added
    * @returns {void}
    */
   _addNativeTextTrack(textTrack: TextTrack): void {
